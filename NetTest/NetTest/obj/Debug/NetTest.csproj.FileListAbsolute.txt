@@ -1,0 +1,15 @@
+C:\Users\basbi\source\repos\NetTest\NetTest\bin\Debug\NetTest.exe.config
+C:\Users\basbi\source\repos\NetTest\NetTest\bin\Debug\NetTest.exe
+C:\Users\basbi\source\repos\NetTest\NetTest\bin\Debug\NetTest.pdb
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\NetTest.csprojAssemblyReference.cache
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\MainWindow.g.cs
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\App.g.cs
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\NetTest_MarkupCompile.cache
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\NetTest_MarkupCompile.lref
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\MainWindow.baml
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\NetTest.g.resources
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\NetTest.Properties.Resources.resources
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\NetTest.csproj.GenerateResource.cache
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\NetTest.csproj.CoreCompileInputs.cache
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\NetTest.exe
+C:\Users\basbi\source\repos\NetTest\NetTest\obj\Debug\NetTest.pdb
