@@ -1,0 +1,17 @@
+C:\Users\basbi\source\repos\NetTest\NetClient\bin\Release\NetClient.exe.config
+C:\Users\basbi\source\repos\NetTest\NetClient\bin\Release\NetClient.exe
+C:\Users\basbi\source\repos\NetTest\NetClient\bin\Release\NetClient.pdb
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\NetClient.csprojAssemblyReference.cache
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\MainWindow.g.cs
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\App.g.cs
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\NetClient_MarkupCompile.cache
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\NetClient_MarkupCompile.lref
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\MainWindow.baml
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\NetClient.g.resources
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\NetClient.Properties.Resources.resources
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\NetClient.csproj.GenerateResource.cache
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\NetClient.csproj.CoreCompileInputs.cache
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\NetClient.exe
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\NetClient.pdb
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\NewGame.g.cs
+C:\Users\basbi\source\repos\NetTest\NetClient\obj\Release\NewGame.baml
