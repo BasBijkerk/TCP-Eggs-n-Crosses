@@ -36,6 +36,7 @@ namespace NetClient
                     MainWindow.SendLoop("!tictacquit:" + MainWindow.against);
                     WhosTurn("Quit");
                     first = false;
+                    canmov = true;
                     turn = 2;
                     lastturn = 0;
                     foreach (Image img in MainWindow.TTG)
@@ -57,6 +58,7 @@ namespace NetClient
                     MainWindow.quitb.IsEnabled = false;
                     WhosTurn("Quit");
                     first = false;
+                    canmov = true;
                     turn = 2;
                     lastturn = 0;
                     foreach (Image img in MainWindow.TTG)
@@ -113,7 +115,7 @@ namespace NetClient
                     }
                         
                 }
-                if(i == 3)
+                if(i >= 2)
                 {
                         
                         TicTacHandler("Enabled");
