@@ -90,6 +90,7 @@ namespace NetClient
                 newt = new DispatcherTimer();
                 newt.Interval = new TimeSpan(0, 0, 0, 1);
                 newt.Tick += new EventHandler(timertick);
+                newt.IsEnabled = true;
                 newt.Start();
 
             }
@@ -99,21 +100,21 @@ namespace NetClient
 
         private static void timertick(object sender, EventArgs e)
         {
-            Application.Current.Dispatcher.Invoke(() => 
-            { 
+            
             for(int i = 0; i < 4; i++)
             {
 
                 if(i == 2)
                 {
-                    
-                    foreach (Image img in MainWindow.TTG)
+                    Application.Current.Dispatcher.Invoke(() =>
+                    {
+                        foreach (Image img in MainWindow.TTG)
                     {
                         img.Source = MainWindow.TBlank.Source;
                         MainWindow.TPas.Source = MainWindow.TBlank.Source;
 
                     }
-                        
+                    });
                 }
                 if(i >= 2)
                 {
@@ -121,10 +122,12 @@ namespace NetClient
                         TicTacHandler("Enabled");
                         canmov = true;
                         WhosTurn("");
+                        newt.IsEnabled = false;
                         newt.Stop();
+                    return;
                 }
             }
-            });
+            
         }
 
         private static void OnUpdate()
@@ -138,66 +141,82 @@ namespace NetClient
                 if (MainWindow.TTG[i].Source.ToString().Contains("Cross") && MainWindow.TTG[i + 1].Source.ToString().Contains("Cross") && MainWindow.TTG[i + 2].Source.ToString().Contains("Cross"))
                 {
                     TicTacReset("Crosses");
+                    return;
                 }
                 if (MainWindow.TTG[i].Source.ToString().Contains("Cross") && MainWindow.TTG[i + 4].Source.ToString().Contains("Cross") && MainWindow.TTG[i + 8].Source.ToString().Contains("Cross"))
                 {
                     TicTacReset("Crosses");
+                    return;
                 }
                 if (MainWindow.TTG[i].Source.ToString().Contains("Cross") && MainWindow.TTG[i + 3].Source.ToString().Contains("Cross") && MainWindow.TTG[i + 6].Source.ToString().Contains("Cross"))
                 {
                     TicTacReset("Crosses");
+                    return;
                 }
                 if (MainWindow.TTG[3].Source.ToString().Contains("Cross") && MainWindow.TTG[4].Source.ToString().Contains("Cross") && MainWindow.TTG[5].Source.ToString().Contains("Cross"))
                 {
                     TicTacReset("Crosses");
+                    return;
                 }
                 if (MainWindow.TTG[6].Source.ToString().Contains("Cross") && MainWindow.TTG[7].Source.ToString().Contains("Cross") && MainWindow.TTG[8].Source.ToString().Contains("Cross"))
                 {
                     TicTacReset("Crosses");
+                    return;
                 }
                 if (MainWindow.TTG[1].Source.ToString().Contains("Cross") && MainWindow.TTG[4].Source.ToString().Contains("Cross") && MainWindow.TTG[7].Source.ToString().Contains("Cross"))
                 {
                     TicTacReset("Crosses");
+                    return;
                 }
                 if (MainWindow.TTG[2].Source.ToString().Contains("Cross") && MainWindow.TTG[5].Source.ToString().Contains("Cross") && MainWindow.TTG[8].Source.ToString().Contains("Cross"))
                 {
                     TicTacReset("Crosses");
+                    return;
                 }
                 if (MainWindow.TTG[6].Source.ToString().Contains("Cross") && MainWindow.TTG[4].Source.ToString().Contains("Cross") && MainWindow.TTG[2].Source.ToString().Contains("Cross"))
                 {
                     TicTacReset("Crosses");
+                    return;
                 }
                 if (MainWindow.TTG[i].Source.ToString().Contains("Circle") && MainWindow.TTG[i + 1].Source.ToString().Contains("Circle") && MainWindow.TTG[i + 2].Source.ToString().Contains("Circle"))
                 {
                     TicTacReset("Circles");
+                    return;
                 }
                 if (MainWindow.TTG[i].Source.ToString().Contains("Circle") && MainWindow.TTG[i + 4].Source.ToString().Contains("Circle") && MainWindow.TTG[i + 8].Source.ToString().Contains("Circle"))
                 {
                     TicTacReset("Circles");
+                    return;
                 }
                 if (MainWindow.TTG[i].Source.ToString().Contains("Circle") && MainWindow.TTG[i + 3].Source.ToString().Contains("Circle") && MainWindow.TTG[i + 6].Source.ToString().Contains("Circle"))
                 {
                     TicTacReset("Circles");
+                    return;
                 }
                 if (MainWindow.TTG[3].Source.ToString().Contains("Circle") && MainWindow.TTG[4].Source.ToString().Contains("Circle") && MainWindow.TTG[5].Source.ToString().Contains("Circle"))
                 {
                     TicTacReset("Circles");
+                    return;
                 }
                 if (MainWindow.TTG[6].Source.ToString().Contains("Circle") && MainWindow.TTG[7].Source.ToString().Contains("Circle") && MainWindow.TTG[8].Source.ToString().Contains("Circle"))
                 {
                     TicTacReset("Circles");
+                    return;
                 }
                 if (MainWindow.TTG[1].Source.ToString().Contains("Circle") && MainWindow.TTG[4].Source.ToString().Contains("Circle") && MainWindow.TTG[7].Source.ToString().Contains("Circle"))
                 {
                     TicTacReset("Circles");
+                    return;
                 }
                 if (MainWindow.TTG[2].Source.ToString().Contains("Circle") && MainWindow.TTG[5].Source.ToString().Contains("Circle") && MainWindow.TTG[8].Source.ToString().Contains("Circle"))
                 {
                     TicTacReset("Circles");
+                    return;
                 }
                 if (MainWindow.TTG[6].Source.ToString().Contains("Circle") && MainWindow.TTG[4].Source.ToString().Contains("Circle") && MainWindow.TTG[2].Source.ToString().Contains("Circle"))
                 {
                     TicTacReset("Circles");
+                    return;
                 }
                 if (!MainWindow.TTG[0].Source.ToString().Contains("Blank") 
                   && !MainWindow.TTG[1].Source.ToString().Contains("Blank") 
